@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+body {
+    background-image: linear-gradient(#CFC, #FCF);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+}
+
+.footer {
+    color: gray;
+    text-align: center;
+    bottom: 20px;
+    margin: auto;
+    margin-top: 65vh;
+    margin-bottom: 20px!important;
+}
+
+.footer a {
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+    border-bottom-style: solid;
+}
+
+.footer a:hover {
+    color: black;
+}
+
+.play {
+    border-style: solid;
+    border-color: red;
+    border-width: 4px;
+    border-radius: 20px;
+
+    width: 150px;
+    height: 40px;
+
+    fill: none;
+    background-color: black;
+    color: white;
+
+    font-size: 24px;
+    font-family: 'Metal Mania', cursive;
+
+    margin: auto;
+    margin-top: 150px;
+    display: block;
+}
+
+.play:hover {
+    cursor: pointer;
+    animation-name: hover-play;
+    animation-duration: 1s;
+    color: blue;
+    border-color: darkgreen;
+}
+
+@keyframes hover-play {
+    from {
+        color: white;
+        border-color: red;
+    }
+    to {
+        color: blue;
+        border-color: darkgreen;
+    }
+}
+
+.person {
+    display: inline;
+    width: 25vw;
+    position: fixed;
+    top: 50vh;
+}
+
+.p0 {
+    left: 8vw;
+}
+
+.p1 {
+    left: 38vw
+}
+.p2 {
+    left: 68vw;
+}

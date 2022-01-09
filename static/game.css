@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+body {
+    background-image: linear-gradient(#CFC, #FCF);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.title {
+    font-size: 48px;
+    text-align: center;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+    text-align: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: green;
+    font-size: 16px;
+    border-bottom-style: solid;
+}
+
+.footer a:hover {
+    color: black;
+}
+
+.scoreboard {
+    z-index: 1;
+    position: fixed;
+    top: 40px;
+    left: 30px;
+    width: 200px;
+    background-color: white;
+    font-family: 'Satisfy', cursive;
+    text-indent: 20px;
+    font-size: 30px;
+    color: darkblue;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: white;
+    box-shadow: 5px 5px lightgray;
+}
+
+.scoreboard-header {
+    margin-bottom: 5px;
+    color: fuchsia;
+}
+
+.mugshot {
+    position: fixed;
+    left: 50vw;
+}
+
+.main {
+    position: fixed;
+    font-family: 'Istok Web', sans-serif;
+
+    left: 25vw;
+    text-align: center;
+    font-size: 30px;
+}
+.data {
+    margin-top: 10px;
+}
+.label {
+    margin-bottom: 10px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: black solid;
+    font-size: 20px;
+}
+
+
+.next {
+    border-style: solid;
+    border-color: red;
+    border-width: 4px;
+    border-radius: 20px;
+
+    width: 150px;
+    height: 40px;
+
+    fill: none;
+    background-color: black;
+    color: white;
+
+    font-size: 24px;
+    font-family: 'Metal Mania', cursive;
+
+    margin: auto;
+    margin-top: 150px;
+    display: block;
+}
+
+.next:hover {
+    cursor: pointer;
+    animation-name: hover-next;
+    animation-duration: 1s;
+    color: blue;
+    border-color: darkgreen;
+}
+
+@keyframes hover-next {
+    from {
+        color: white;
+        border-color: red;
+    }
+    to {
+        color: blue;
+        border-color: darkgreen;
+    }
+}
